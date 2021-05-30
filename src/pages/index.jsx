@@ -1,14 +1,20 @@
-import * as React from "react";
+import React, { Component } from "react";
 import Loader from "../components/Loader";
 import "../scss/main.scss";
 
-// markup
-const IndexPage = () => {
-  return (
-    <div className="body">
-      <Loader></Loader>
-    </div>
-  );
-};
+export default class IndexPage extends Component {
+  playAudio() {
+    console.log("hey");
+  }
 
-export default IndexPage;
+  render() {
+    return (
+      <div className="body">
+        <button onClick={() => this.playAudio()}>Hello</button>
+        <audio className="audio-element" autoPlay muted>
+          <source src="../utils/audio/background-music.mp3"></source>
+        </audio>
+      </div>
+    );
+  }
+}
