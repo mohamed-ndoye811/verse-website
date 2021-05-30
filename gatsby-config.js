@@ -7,6 +7,7 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
       options: {
